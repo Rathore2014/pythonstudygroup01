@@ -22,7 +22,14 @@ class Electeronics():
       print('Bluethooth is working')
     else:
       print('Bluethooth is not working')
-
+    if self.properties['speaker'] == False:
+      print('Speaker is not Working')
+    else:
+       print('Speaker is Working')
+    if self.properties['wifi'] == True:
+      print('Wifi is working')
+    else:
+      print('Wifi is not working')    
 obj = Electeronics()
 test = obj.testProperties()
 
